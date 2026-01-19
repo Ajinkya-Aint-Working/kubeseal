@@ -151,7 +151,7 @@ kubectl apply -f sealed-secret.yaml
 
 ```bash
 kubectl get secret app-secret -n default
-kubectl get secret app-secret -n default -o jsonpath='{.data.API_KEY}' | base64 --decode
+kubectl get secret app-secret -n default -o jsonpath='{.data.API_KEY}' | base64 --decode && echo
 ```
 
 ---
